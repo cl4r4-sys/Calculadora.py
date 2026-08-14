@@ -46,7 +46,7 @@ entrada.pack(fill="both", ipadx=8, ipady=15)
 
 #Criar Botões
 frame_botões = tk.Frame(janela)
-frame_botões.pack(expend=True, fill="both")
+frame_botões.pack(expand=True, fill="both")
 
 #Mapeamento
 botoes = [
@@ -67,6 +67,6 @@ for linha in botoes:
         else:
             botao = tk.Button(linha_frame, text=texto, font=("Arial", 18), command=lambda val=texto: clicar(val))
 
-            botao.pack(sider="left", expand=True, fill="both")
+            botao.pack(side="left", expand=True, fill="both")
 
 janela.mainloop()
